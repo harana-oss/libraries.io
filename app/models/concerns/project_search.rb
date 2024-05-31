@@ -55,9 +55,7 @@ module ProjectSearch
     }, on: :destroy
 
     def as_indexed_json(_options = {})
-      json_to_index = as_json(methods: %i[stars repo_name exact_name extra_searchable_names contributions_count dependent_repos_count]).merge(keywords_array: keywords)
-      puts json_to_index
-      json_to_index
+      as_json(methods: %i[stars repo_name exact_name extra_searchable_names contributions_count dependent_repos_count]).merge(keywords_total_array: keywords)
     end
 
     def dependent_repos_count
