@@ -1,5 +1,3 @@
-version: '3.0'
-
 volumes:
   postgres-data:
     driver: local
@@ -12,21 +10,29 @@ volumes:
 
 services:
   postgres:
-    image: postgres:9.6.3
+    image: postgres:9.6.24
     volumes:
       - postgres-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=not-a-secret
       - POSTGRES_USER=librariesio
+    ports:
+      - "5432:5432"
 
   elasticsearch:
-    image: elasticsearch:2.4.5
+    image: elasticsearch:8.13.4
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
-    command: -Daction.auto_create_index=true
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+      - network.host=0.0.0.0
+      - xpack.security.enabled=false
 
   redis:
-    image: redis:3.2.9
+    image: redis:7
     volumes:
       - redis-data:/var/lib/redis
     command: redis-server --appendonly yes
@@ -34,7 +40,7 @@ services:
   sidekiq: &app_base
     build:
       context: .
-    image: librariesio/libraries.io
+    image: haranaoss/lio:1
     environment:
       - DATABASE_URL=postgresql://librariesio:not-a-secret@postgres/librariesio
       - REDISCLOUD_URL=redis://redis:6379/1
