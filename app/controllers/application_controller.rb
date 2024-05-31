@@ -169,21 +169,6 @@ class ApplicationController < ActionController::Base
     "#{format_sort} #{format_order}"
   end
 
-  def search_projects(query)
-    es_query(Project, query, {
-               platform: current_platforms,
-               normalized_licenses: current_licenses,
-               language: current_languages,
-               keywords_array: current_keywords,
-             })
-  end
-
-  def es_query(klass, query, filters)
-    klass.search(query, filters: filters,
-                        sort: format_sort,
-                        order: format_order).paginate(page: page_number, per_page: per_page_number)
-  end
-
   def pg_search_projects(term)
     ProjectSearchQuery.new(
       term,

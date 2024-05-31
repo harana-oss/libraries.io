@@ -5,9 +5,6 @@ volumes:
   redis-data:
     driver: local
 
-  elasticsearch-data:
-    driver: local
-
 services:
   postgres:
     image: postgres:9.6.24
@@ -18,18 +15,6 @@ services:
       - POSTGRES_USER=librariesio
     ports:
       - "5432:5432"
-
-  elasticsearch:
-    image: elasticsearch:8.13.4
-    volumes:
-      - elasticsearch-data:/usr/share/elasticsearch/data
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      - discovery.type=single-node
-      - network.host=0.0.0.0
-      - xpack.security.enabled=false
 
   redis:
     image: redis:7
@@ -44,12 +29,10 @@ services:
     environment:
       - DATABASE_URL=postgresql://librariesio:not-a-secret@postgres/librariesio
       - REDISCLOUD_URL=redis://redis:6379/1
-      - ELASTICSEARCH_CLUSTER_URL=elasticsearch:9200
     volumes:
-      - .:/libraries.io
+      - .:/harana.dev
     depends_on:
       - postgres
-      - elasticsearch
       - redis
     command: bundle exec sidekiq -C config/sidekiq.yml
 

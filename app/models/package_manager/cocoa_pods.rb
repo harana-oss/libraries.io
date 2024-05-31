@@ -21,17 +21,17 @@ module PackageManager
     end
 
     def self.project_names
-      get_json("http://cocoapods.libraries.io/pods.json")
+      get_json("http://cocoapods.harana.dev/pods.json")
     end
 
     def self.recent_names
-      u = "http://cocoapods.libraries.io/feed.rss"
+      u = "http://cocoapods.harana.dev/feed.rss"
       titles = SimpleRSS.parse(get_raw(u)).items.map(&:title)
       titles.map { |t| t.split[1] }.uniq
     end
 
     def self.project(name)
-      versions = get_json("http://cocoapods.libraries.io/pods/#{name}.json") || {}
+      versions = get_json("http://cocoapods.harana.dev/pods/#{name}.json") || {}
       latest_version = versions.keys.max_by { |version| version.split(".").map(&:to_i) }
       versions.fetch(latest_version, {}).then do |v|
         v.merge("versions" => versions) if versions.present?

@@ -9,7 +9,7 @@ class PackageManager::Maven::MavenCentral < PackageManager::Maven::Common
   end
 
   def self.recent_names
-    get("https://maven.libraries.io/mavenCentral/recent")
+    get("https://maven.harana.dev/mavenCentral/recent")
   end
 
   def self.missing_version_remover

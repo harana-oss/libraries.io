@@ -1,20 +1,20 @@
 # Libraries.io &#128218;
 
-[![Build Status](https://travis-ci.org/librariesio/libraries.io.svg?branch=main)](https://travis-ci.org/librariesio/libraries.io)
-[![Open Source Helpers](https://www.codetriage.com/librariesio/libraries.io/badges/users.svg)](https://www.codetriage.com/librariesio/libraries.io)
+[![Build Status](https://travis-ci.org/librariesio/harana.dev.svg?branch=main)](https://travis-ci.org/librariesio/harana.dev)
+[![Open Source Helpers](https://www.codetriage.com/librariesio/harana.dev/badges/users.svg)](https://www.codetriage.com/librariesio/harana.dev)
 
 Libraries.io helps developers find new open source libraries, modules and frameworks and keep track of ones they depend upon.
 
 ## Documentation
 
-Project wide documentation can be found on https://docs.libraries.io, which contains high level guides on:
+Project wide documentation can be found on https://docs.harana.dev, which contains high level guides on:
 
-- [What Libraries.io is](https://docs.libraries.io/)
-- [The strategy driving the project](https://docs.libraries.io/strategy)
-- [The roadmap of future goals](https://docs.libraries.io/roadmap)
-- [Architecture overview](https://docs.libraries.io/overview)
-- [Contributing guide](https://docs.libraries.io/contributorshandbook)
-- [Labelling policy](https://docs.libraries.io/labelling)
+- [What Libraries.io is](https://docs.harana.dev/)
+- [The strategy driving the project](https://docs.harana.dev/strategy)
+- [The roadmap of future goals](https://docs.harana.dev/roadmap)
+- [Architecture overview](https://docs.harana.dev/overview)
+- [Contributing guide](https://docs.harana.dev/contributorshandbook)
+- [Labelling policy](https://docs.harana.dev/labelling)
 
 Each repository has more details documentation on getting setup and adding new features, for this repository check out the following guides:
 
@@ -23,12 +23,12 @@ Each repository has more details documentation on getting setup and adding new f
 
 ## Contributors
 
-Many wonderful people have contributed to the project, you can see them all here: https://github.com/librariesio/libraries.io/graphs/contributors
+Many wonderful people have contributed to the project, you can see them all here: https://github.com/librariesio/harana.dev/graphs/contributors
 
 ## Development
 
-Source hosted at [GitHub](https://github.com/librariesio/libraries.io).
-Report issues/feature requests on [GitHub Issues](https://github.com/librariesio/libraries.io/issues).
+Source hosted at [GitHub](https://github.com/librariesio/harana.dev).
+Report issues/feature requests on [GitHub Issues](https://github.com/librariesio/harana.dev/issues).
 
 ### Note on Patches/Pull Requests
 
@@ -43,4 +43,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## Copyright
 
-Copyright (c) Tidelift, Inc. See [LICENSE](https://github.com/librariesio/libraries.io/blob/main/LICENSE.txt) for details.
+Copyright (c) Tidelift, Inc. See [LICENSE](https://github.com/librariesio/harana.dev/blob/main/LICENSE.txt) for details.

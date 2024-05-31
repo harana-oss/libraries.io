@@ -10,8 +10,8 @@ describe "maintenance stats" do
       repository.projects.create!(
         name: "test-project",
         platform: "Maven",
-        repository_url: "https://github.com/librariesio/libraries.io",
-        homepage: "https://libraries.io"
+        repository_url: "https://github.com/librariesio/harana.dev",
+        homepage: "https://harana.dev"
       )
     end
 

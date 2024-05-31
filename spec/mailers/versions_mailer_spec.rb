@@ -17,7 +17,7 @@ describe VersionsMailer, type: :mailer do
     end
 
     it "renders the sender email" do
-      expect(mail["From"].to_s).to eq "Libraries <notifications@libraries.io>"
+      expect(mail["From"].to_s).to eq "Libraries <notifications@harana.dev>"
     end
 
     it "uses nickname" do

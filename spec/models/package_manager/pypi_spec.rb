@@ -385,7 +385,7 @@ describe PackageManager::Pypi do
     let(:project_name) { "package_name" }
     let(:project_license) { "MIT" }
     let(:project_summary) { "package summary" }
-    let(:project_source_repository_url) { "https://www.libraries.io/package_name/source" }
+    let(:project_source_repository_url) { "https://www.harana.dev/package_name/source" }
     let(:removed_version) { "1.0.0" }
     let(:removed_version_published_at) { 1.year.ago.round }
     let(:not_removed_version) { "2.0.0" }
@@ -398,7 +398,7 @@ describe PackageManager::Pypi do
             "name" => project_name,
             "license" => project_license,
             "summary" => project_summary,
-            "homepage" => "https://www.libraries.io/package_name/home",
+            "homepage" => "https://www.harana.dev/package_name/home",
             "project_urls" => { "Source" => project_source_repository_url },
           },
           "releases" =>
@@ -538,7 +538,7 @@ end
 describe PackageManager::Pypi::JsonApiProject do
   describe "#homepage_url" do
     context "when the homepage URL is returned in a different format" do
-      let(:project_home_url) { "https://www.libraries.io/package_name/home" }
+      let(:project_home_url) { "https://www.harana.dev/package_name/home" }
       let(:project) do
         PackageManager::Pypi::JsonApiProject.new(
           {

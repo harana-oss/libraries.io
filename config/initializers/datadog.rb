@@ -8,7 +8,6 @@ Datadog.configure do |c|
     c.tracing.instrument :rails
     c.tracing.instrument :sidekiq, tag_args: true
     c.tracing.instrument :faraday
-    c.tracing.instrument :elasticsearch
     c.tracing.instrument :active_record, service_name: "libraries_postgres"
 
     # turn on Ruby profiler; there's also a require in config.ru

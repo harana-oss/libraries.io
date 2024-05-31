@@ -107,7 +107,7 @@ module RepositoryHost
         repository.full_name,
         "web",
         {
-          url: "https://libraries.io/hooks/github",
+          url: "https://harana.dev/hooks/github",
           content_type: "json",
         },
         {

@@ -28,7 +28,7 @@
   <meta name="yandex-verification" content="2a6b144b8bd37026" />
   <%= content_for(:meta).presence || render_meta %>
   <% if content_for?(:canonical_url) %>
-  <link rel="canonical" href="https://libraries.io<%= yield(:canonical_url) %>" />
+  <link rel="canonical" href="https://harana.dev<%= yield(:canonical_url) %>" />
   <% end %>
   <link href="/opensearch.xml" title="Libraries.io" rel="search" type="application/opensearchdescription+xml">
   <% if Rails.configuration.ga_analytics_id.present? %>
@@ -58,12 +58,12 @@
       "@context": "http://schema.org",
       "@type": "WebSite",
       "name": "Libraries.io",
-      "url": "https://libraries.io/",
+      "url": "https://harana.dev/",
       "description": "Discover open source packages, modules and frameworks you can use in your code",
-      "license": "https://github.com/librariesio/libraries.io/blob/main/LICENSE.txt",
+      "license": "https://github.com/librariesio/harana.dev/blob/main/LICENSE.txt",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://libraries.io/search?q={search_term_string}",
+        "target": "https://harana.dev/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -74,12 +74,12 @@
       "@type": "Organization",
       "name": "Libraries.io",
       "description": "Discover open source packages, modules and frameworks you can use in your code",
-      "url": "https://libraries.io/",
+      "url": "https://harana.dev/",
       "logo": "<%= asset_url "apple-touch-icon-152x152.png" %>",
-      "email": "support@libraries.io",
+      "email": "support@harana.dev",
       "sameAs": [
         "https://twitter.com/librariesio",
-        "https://www.facebook.com/libraries.io",
+        "https://www.facebook.com/harana.dev",
         "https://github.com/librariesio",
         "https://plus.google.com/101868076054784591044"
       ]

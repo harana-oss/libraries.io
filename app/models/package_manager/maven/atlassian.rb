@@ -13,6 +13,6 @@ class PackageManager::Maven::Atlassian < PackageManager::Maven::Common
   end
 
   def self.recent_names
-    get("https://maven.libraries.io/atlassian/recent")
+    get("https://maven.harana.dev/atlassian/recent")
   end
 end

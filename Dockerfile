@@ -3,7 +3,7 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev libxml2-d
 RUN curl -sSL https://sdk.cloud.google.com | CLOUDSDK_INSTALL_DIR=/usr/local bash
 ENV PATH $PATH:/usr/local/google-cloud-sdk/bin
 
-ENV APP_HOME /libraries.io
+ENV APP_HOME /harana.dev
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 # throw errors if Gemfile has been modified since Gemfile.lock

@@ -46,11 +46,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/platforms?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/platforms?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/platforms?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/platforms?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-platforms", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -65,11 +65,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -82,11 +82,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name/:version/dependencies?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name/:version/dependencies?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}/#{@version.number}/dependencies?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}/#{@version.number}/dependencies?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project-dependencies", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -104,11 +104,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name/dependents?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name/dependents?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}/dependents?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}/dependents?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project-dependents", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -121,11 +121,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name/dependent_repositories?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name/dependent_repositories?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}/dependent_repositories?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}/dependent_repositories?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project-dependent-repositories", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -139,11 +139,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name/contributors?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name/contributors?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}/contributors?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}/contributors?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project-contributors", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -157,11 +157,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/:platform/:name/sourcerank?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/:platform/:name/sourcerank?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/#{@project.platform}/#{@project.name}/sourcerank?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/#{@project.platform}/#{@project.name}/sourcerank?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}sourcerank", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -175,7 +175,7 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/search?q=grunt&api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/search?q=grunt&api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
@@ -200,7 +200,7 @@
     </ul>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/search?q=grunt&api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/search?q=grunt&api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-project-search", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -212,11 +212,11 @@
       Get info for a repository. Currently only works for open source repositories.
     </p>
     <p>
-      <code>GET https://libraries.io/api/github/:owner/:name?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:owner/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository.full_name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository.full_name}?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-repository", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -228,11 +228,11 @@
       Get a list of dependencies for all of a repository's projects. Currently only works for open source repositories.
     </p>
     <p>
-      <code>GET https://libraries.io/api/github/:owner/:name/dependencies?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:owner/:name/dependencies?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository.full_name}/dependencies?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository.full_name}/dependencies?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-repository-dependencies", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -244,11 +244,11 @@
       Get a list of packages referencing the given repository.
     </p>
     <p>
-      <code>GET https://libraries.io/api/github/:owner/:name/projects?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:owner/:name/projects?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository.full_name}/projects?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository.full_name}/projects?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-repository-projects", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -260,11 +260,11 @@
       Get information for a given user or organization.
     </p>
     <p>
-      <code>GET https://libraries.io/api/github/:login?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong><%= link_to nil, "https://libraries.io/api/github/#{@repository_user.login}?api_key=#{@api_key}" %></strong>
+      Example: <strong><%= link_to nil, "https://harana.dev/api/github/#{@repository_user.login}?api_key=#{@api_key}" %></strong>
     </p>
     <% cache "api-docs-#{@cache_version}-user", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -278,11 +278,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/github/:login/repositories?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login/repositories?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/librariesio/repositories?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/librariesio/repositories?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-github-user-repositories", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -296,11 +296,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/github/:login/projects?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login/projects?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository_user.login}/projects?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository_user.login}/projects?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-github-user-projects", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -314,11 +314,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/github/:login/project-contributions?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login/project-contributions?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository_user.login}/project-contributions?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository_user.login}/project-contributions?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-github-user-project-contributions", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -332,11 +332,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/github/:login/repository-contributions?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login/repository-contributions?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository_user.login}/repository-contributions?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository_user.login}/repository-contributions?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-github-user-repository-contributions", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -352,11 +352,11 @@
       Parameters: <code>platform</code>
     </p>
     <p>
-      <code>GET https://libraries.io/api/github/:login/dependencies?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/github/:login/dependencies?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/github/#{@repository_user.login}/dependencies?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/github/#{@repository_user.login}/dependencies?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-github-user-dependencies", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -369,11 +369,11 @@
     </p>
 
     <p>
-      <code>GET https://libraries.io/api/subscriptions?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/subscriptions?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/subscriptions?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/subscriptions?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-subscriptions-index", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -388,11 +388,11 @@
       Parameters: <code>include_prerelease</code>
     </p>
     <p>
-      <code>POST https://libraries.io/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
+      <code>POST https://harana.dev/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-subscriptions-create", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -404,11 +404,11 @@
       Check if a users is subscribed to receive notifications about new releases of a project.
     </p>
     <p>
-      <code>GET https://libraries.io/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
+      <code>GET https://harana.dev/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-subscriptions-show", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -423,11 +423,11 @@
       Parameters: <code>include_prerelease</code>
     </p>
     <p>
-      <code>PUT https://libraries.io/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
+      <code>PUT https://harana.dev/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
     </p>
     <% cache "api-docs-#{@cache_version}-subscriptions-update", :expires_in => 1.day do %>
       <pre class='well well-small'>
@@ -439,11 +439,11 @@
       Stop receiving release notifications from a project.
     </p>
     <p>
-      <code>DELETE https://libraries.io/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
+      <code>DELETE https://harana.dev/api/subscriptions/:platform/:name?api_key=<%= @api_key %></code>
     </p>
     <hr>
     <p>
-      Example: <strong> <%= link_to nil, "https://libraries.io/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
+      Example: <strong> <%= link_to nil, "https://harana.dev/api/subscriptions/#{@project.platform}/#{@project.name}?api_key=#{@api_key}" %> </strong>
     </p>
     <hr>
     <h3 id='api-wrappers'>API Wrappers</h3>
@@ -451,10 +451,10 @@
       JavaScript / Node
     </p>
     <ul>
-      <li><a href="https://libraries.io/npm/librarian-api">librarian-api</a></li>
+      <li><a href="https://harana.dev/npm/librarian-api">librarian-api</a></li>
     </ul>
     <ul>
-      <li><a href="https://libraries.io/npm/libraries.io">libraries.io</a></li>
+      <li><a href="https://harana.dev/npm/harana.dev">harana.dev</a></li>
     </ul>
     <p>
       Python
@@ -526,8 +526,8 @@
     </ul>
     <p>
       For any questions, feature requests or bug reports<br/>
-      email <%= mail_to 'support@libraries.io', 'support@libraries.io', subject: 'Libraries.io API' %> or
-      <%= link_to 'open an issue', 'https://github.com/librariesio/libraries.io/issues/new' %>.
+      email <%= mail_to 'support@harana.dev', 'support@harana.dev', subject: 'Libraries.io API' %> or
+      <%= link_to 'open an issue', 'https://github.com/librariesio/harana.dev/issues/new' %>.
     </p>
   </div>
 </div>

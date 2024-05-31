@@ -124,7 +124,7 @@ module PackageManager
 
     # NPM is currently unreliable in its update publishing.
     # The updates are coming in out of order, which is throwing off single version updates.
-    # See https://github.com/librariesio/libraries.io/pull/3278 for more details.
+    # See https://github.com/librariesio/harana.dev/pull/3278 for more details.
     def self.supports_single_version_update?
       false
     end

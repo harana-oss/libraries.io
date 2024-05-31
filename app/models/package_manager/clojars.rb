@@ -22,7 +22,7 @@ module PackageManager
     end
 
     def self.recent_names
-      get("https://maven.libraries.io/clojars/recent")
+      get("https://maven.harana.dev/clojars/recent")
     end
 
     # Clojars download urls require a version

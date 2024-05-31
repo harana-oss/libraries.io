@@ -127,11 +127,11 @@ describe Project, type: :model do
     let!(:project) { create(:project) }
 
     it "should save the updated format URL" do
-      project.update!(homepage: "https://libraries.io", repository_url: "scm:git:git://github.com/librariesio/libraries.io/libaries.io.git")
+      project.update!(homepage: "https://harana.dev", repository_url: "scm:git:git://github.com/librariesio/harana.dev/libaries.io.git")
       project.reformat_repository_url
 
-      expect(project.homepage).to eql "https://libraries.io"
-      expect(project.repository_url).to eql "https://github.com/librariesio/libraries.io"
+      expect(project.homepage).to eql "https://harana.dev"
+      expect(project.repository_url).to eql "https://github.com/librariesio/harana.dev"
     end
   end
 

@@ -128,7 +128,7 @@ FactoryBot.define do
     company { "Libraries.io" }
     blog { "http://nesbitt.io" }
     location { "Somerset, UK" }
-    email { "andrew@libraries.io" }
+    email { "andrew@harana.dev" }
     bio { "Developer of things" }
     followers { 1 }
     following { 2 }
@@ -141,8 +141,8 @@ FactoryBot.define do
     sequence(:uuid)
     host_type { "GitHub" }
     name { "Libraries.io" }
-    blog { "https://libraries.io" }
-    email { "support@libraries.io" }
+    blog { "https://harana.dev" }
+    email { "support@harana.dev" }
     location { "Bath, UK" }
     bio { "Open source things" }
   end
@@ -246,7 +246,7 @@ FactoryBot.define do
     has_issues { false }
     has_pages { false }
     has_wiki { false }
-    homepage { "http://libraries.io" }
+    homepage { "http://harana.dev" }
     host_type { "GitHub" }
     keywords { %w[key words] }
     language { "Ruby" }

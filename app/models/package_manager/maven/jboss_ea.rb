@@ -14,6 +14,6 @@ class PackageManager::Maven::JbossEa < PackageManager::Maven::Common
   end
 
   def self.recent_names
-    get("https://maven.libraries.io/jBossEa/recent")
+    get("https://maven.harana.dev/jBossEa/recent")
   end
 end

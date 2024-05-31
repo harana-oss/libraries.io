@@ -52,7 +52,7 @@ module PackageManager
 
     def self.project_names
       # NB this is just the most recent set of incremental updates to maven central, not all releases
-      get("https://maven.libraries.io/mavenCentral/recent")
+      get("https://maven.harana.dev/mavenCentral/recent")
     end
 
     def self.project(name, latest: nil)

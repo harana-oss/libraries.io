@@ -123,7 +123,7 @@ objc[94869]: +[__NSCFConstantString initialize] may have been in progress in ano
 ```
 you may need to run `export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES` first.
 
-You're now ready to go with the basic libraries.io app setup, to grab more data check out the extensive list of rake tasks with the following command:
+You're now ready to go with the basic harana.dev app setup, to grab more data check out the extensive list of rake tasks with the following command:
 
 ```bash
 rake -T

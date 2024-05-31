@@ -2,7 +2,7 @@
 
 require "parallel"
 
-SitemapGenerator::Sitemap.default_host = "https://libraries.io"
+SitemapGenerator::Sitemap.default_host = "https://harana.dev"
 SitemapGenerator::Sitemap.public_path = "tmp/"
 SitemapGenerator::Sitemap.sitemaps_path = "sitemaps/"
 SitemapGenerator::Sitemap.search_engines[:yandex] = "https://blogs.yandex.ru/pings/?status=success&url=%s"

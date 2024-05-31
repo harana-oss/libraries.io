@@ -124,7 +124,7 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  config.host = "libraries.io"
+  config.host = "harana.dev"
   # default mail links to https
   config.action_mailer.default_url_options = { protocol: "https", host: config.host }
 

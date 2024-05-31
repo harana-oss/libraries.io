@@ -4,7 +4,7 @@
     "containers": [
       {
         "name": "db-migration",
-        "image": "gcr.io/symbolic-yeti-208501/libraries.io",
+        "image": "gcr.io/symbolic-yeti-208501/harana.dev",
         "args": ["sh", "-c", "echo 'Running migrations' && ln -s /secrets/libraries/.env.production .env && bundle exec rake db:migrate && bundle exec rake db:version"],
         "env": [
           {

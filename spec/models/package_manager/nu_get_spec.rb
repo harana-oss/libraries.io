@@ -44,7 +44,7 @@ describe PackageManager::NuGet do
   end
 
   describe "with repo in nuspec data" do
-    let(:repository_url) { "https://github.com/librariesio/libraries.io" }
+    let(:repository_url) { "https://github.com/librariesio/harana.dev" }
 
     let(:nuspec_data) do
       Ox.parse(

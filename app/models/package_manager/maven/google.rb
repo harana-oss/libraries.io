@@ -13,7 +13,7 @@ class PackageManager::Maven::Google < PackageManager::Maven::Common
   end
 
   def self.recent_names
-    get("https://maven.libraries.io/googleMaven/recent")
+    get("https://maven.harana.dev/googleMaven/recent")
   end
 
   # TODO: check and store if the value on the other end is a JAR or AAR file

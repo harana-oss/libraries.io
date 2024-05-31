@@ -32,19 +32,19 @@ describe PackageManager::Base do
     end
 
     context "repo nil, homepage a repo url" do
-      let(:homepage) { "https://github.com/librariesio/libraries.io" }
+      let(:homepage) { "https://github.com/librariesio/harana.dev" }
 
       it "returns blank" do
-        expect(result).to eq("https://github.com/librariesio/libraries.io")
+        expect(result).to eq("https://github.com/librariesio/harana.dev")
       end
     end
 
     context "repo not a url, homepage a url" do
       let(:repo) { "test" }
-      let(:homepage) { "https://github.com/librariesio/libraries.io" }
+      let(:homepage) { "https://github.com/librariesio/harana.dev" }
 
       it "returns homepage" do
-        expect(result).to eq("https://github.com/librariesio/libraries.io")
+        expect(result).to eq("https://github.com/librariesio/harana.dev")
       end
     end
 

@@ -36,11 +36,11 @@ describe PackageManager::Packagist do
           "name" =>	"librariesio/fakepkg",
           "description" => "A Libraries package.",
           "keywords" => %w[php not-real],
-          "homepage" => "https://fakepkg.libraries.io",
+          "homepage" => "https://fakepkg.harana.dev",
           "version" => "v1.2.3",
           "version_normalized" => "1.2.3",
           "license" => ["BSD-3-Clause"],
-          "authors" => [{ "name" => "Fake Author", "email" => "fake.author@libraries.io" }],
+          "authors" => [{ "name" => "Fake Author", "email" => "fake.author@harana.dev" }],
           "source" => { "url" => "https://github.com/librariesio/fakepkg", "type" => "git", "reference" => "12341234123412341234" },
           "dist" => {},
           "type" => "library",
@@ -55,7 +55,7 @@ describe PackageManager::Packagist do
         expect(described_class.mapping(subject)).to include(
           name: "librariesio/fakepkg",
           description: "A Libraries package.",
-          homepage: "https://fakepkg.libraries.io",
+          homepage: "https://fakepkg.harana.dev",
           keywords_array: %w[php not-real],
           licenses: "BSD-3-Clause",
           repository_url: "https://github.com/librariesio/fakepkg"

@@ -47,16 +47,16 @@ These groups have been expanded into [personas](/personas.md) for contributors t
 ## What Should I Know Before I Get Started?
 
 ### Code of Conduct
-Libraries.io is an open and inclusive [community of people](https://github.com/orgs/librariesio/people) working together. We expect contributors to abide by our [contributor code of conduct](https://github.com/librariesio/libraries.io/blob/main/CODE_OF_CONDUCT.md) which basically say 'be excellent to each other'. Please report unacceptable behavior to conduct@libraries.io
+Libraries.io is an open and inclusive [community of people](https://github.com/orgs/librariesio/people) working together. We expect contributors to abide by our [contributor code of conduct](https://github.com/librariesio/harana.dev/blob/main/CODE_OF_CONDUCT.md) which basically say 'be excellent to each other'. Please report unacceptable behavior to conduct@harana.dev
 
 ### Language
 We communicate predominately in English. Contributions to the project should be made with English as the first language. We are happy for members of the community to communicate in a language other than English in chat, email and video but be aware that this might be considered exclusive by other members of the community.
 
 ### Documentation
-Documentation for the project as a whole is available at [docs.libraries.io](https://docs.libraries.io). These pages are generated from the [documentation](https://github.com/librariesio/documentation) repo. Documentation that needs to be in every repo is replicated in [required-files](https://github.com/librariesio/required-files) (currently limited to [GitHub templates](https://github.com/blog/2111-issue-and-pull-request-templates)). Otherwise documentation will be specific to that repo. For example the main [Libraries.io](https://github.com/librariesio/libraries.io) `README.md` contains information about installing and running the main rails application.
+Documentation for the project as a whole is available at [docs.harana.dev](https://docs.harana.dev). These pages are generated from the [documentation](https://github.com/librariesio/documentation) repo. Documentation that needs to be in every repo is replicated in [required-files](https://github.com/librariesio/required-files) (currently limited to [GitHub templates](https://github.com/blog/2111-issue-and-pull-request-templates)). Otherwise documentation will be specific to that repo. For example the main [Libraries.io](https://github.com/librariesio/harana.dev) `README.md` contains information about installing and running the main rails application.
 
 ### Setup
-If you wish to make contributions to Libraries.io then you'll need a local version of the site to test. You can find instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/librariesio/libraries.io/blob/main/README.md#getting-started).
+If you wish to make contributions to Libraries.io then you'll need a local version of the site to test. You can find instructions to install the correct Ruby version, Postgres, and to set up the database in our [README](https://github.com/librariesio/harana.dev/blob/main/README.md#getting-started).
 
 ## How Can I Contribute?
 
@@ -99,10 +99,10 @@ You're in luck! We label issues that are ideal for first time contributors with 
 
 Tickets are labeled by size, skills required and to indicate workflow. Details can be found in our [labelling policy](/labelling.md).
 
-To get you started you might want to check out issues concerning [documentation](https://github.com/librariesio/documentation/issues/), [user experience](https://github.com/librariesio/libraries.io/labels/ux), [visual design](https://github.com/librariesio/libraries.io/issues/labels/visual%20design) or perhaps something already [awaiting help](https://github.com/librariesio/libraries.io/labels/help%20wanted). You may find the following useful:
+To get you started you might want to check out issues concerning [documentation](https://github.com/librariesio/documentation/issues/), [user experience](https://github.com/librariesio/harana.dev/labels/ux), [visual design](https://github.com/librariesio/harana.dev/issues/labels/visual%20design) or perhaps something already [awaiting help](https://github.com/librariesio/harana.dev/labels/help%20wanted). You may find the following useful:
 
 * Our [strategy](/strategy.md) which outlines what our goals are, how we are going to achieve those goals and what we are specifically going to avoid.
-* An [overview](/overview.md) of the components that make up the Libraries.io project and run the [https://libraries.io](https://libraries.io) site.
+* An [overview](/overview.md) of the components that make up the Libraries.io project and run the [https://harana.dev](https://harana.dev) site.
 
 ## Who Are Libraries.io's Users?
 Libraries.io focusses on the following personas:
@@ -132,7 +132,7 @@ We *try* to create an issue for everything. That is any bug, feature or enhancem
 We constrain labels as they are a key part of our workflow. Tickets will be labeled according to our [labelling policy](/labelling.md).
 
 #### Templates
-We use templates to guide contributors toward good practice in [filing bugs, requesting enhancements and features](https://github.com/librariesio/libraries.io/blob/main/.github/ISSUE_TEMPLATE.md) and in [issuing pull-requests](https://github.com/librariesio/libraries.io/blob/main/.github/PULL_REQUEST_TEMPLATE.md).
+We use templates to guide contributors toward good practice in [filing bugs, requesting enhancements and features](https://github.com/librariesio/harana.dev/blob/main/.github/ISSUE_TEMPLATE.md) and in [issuing pull-requests](https://github.com/librariesio/harana.dev/blob/main/.github/PULL_REQUEST_TEMPLATE.md).
 
 #### Commenting
 If it is possible to comment your contribution — for instance if you are contributing code — then do so in a way that is simple, clear, concise and lowers the level of understanding necessary for others to comprehend what comes afterward. If you are contributing code it is very likely it will be rejected if it does not contain sufficient comments.

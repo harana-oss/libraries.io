@@ -337,13 +337,6 @@ class Project < ApplicationRecord
     []
   end
 
-  def mlt_ids
-    Rails.cache.fetch "projects:#{id}:mlt_ids", expires_in: 1.week do
-      results = Project.__elasticsearch__.client.mlt(id: id, index: "projects", type: "project", mlt_fields: "keywords_array,platform,description,repository_url", min_term_freq: 1, min_doc_freq: 2)
-      results["hits"]["hits"].map { |h| h["_id"] }
-    end
-  end
-
   def destroy_versions
     versions.find_each(&:destroy)
   end

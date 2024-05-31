@@ -7,7 +7,7 @@ module PackageManager
     REPOSITORY_SOURCE_NAME = "Main"
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://anaconda.org"
-    API_URL = "https://conda.libraries.io"
+    API_URL = "https://conda.harana.dev"
 
     PROVIDER_MAP = ProviderMap.new(prioritized_provider_infos: [
       ProviderInfo.new(identifier: "Main", default: true, provider_class: Main),
